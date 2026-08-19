@@ -81,7 +81,7 @@ main {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 210px;
+  grid-template-columns: minmax(0, 1fr) 220px;
   gap: 62px;
   align-items: start;
 }
@@ -115,16 +115,17 @@ h1 {
 }
 
 .portrait {
-  width: 210px;
+  width: 220px;
   margin: 26px 0 0;
 }
 
 .portrait img {
   display: block;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  border-radius: 2px;
+  width: 220px;
+  height: 220px;
+  border-radius: 4px;
   object-fit: cover;
+  object-position: center 48%;
 }
 
 .links {
@@ -278,8 +279,13 @@ footer {
 
   .portrait {
     grid-row: 1;
-    width: 145px;
+    width: 130px;
     margin: 0;
+  }
+
+  .portrait img {
+    width: 130px;
+    height: 130px;
   }
 
   .intro-copy {
